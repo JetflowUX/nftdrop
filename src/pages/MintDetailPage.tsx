@@ -36,7 +36,8 @@ export function MintDetailPage() {
                     <a
                       href={project.website}
                       target="_blank"
-                      rel="noreferrer"
+                      rel="noopener noreferrer"
+                      aria-label="Share this project"
                     >
                       <Button size="sm" variant="secondary">
                         <Share2 size={16} />
@@ -112,7 +113,7 @@ export function MintDetailPage() {
                   <a
                     href={project.website}
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                     className="block"
                   >
                     <Button variant="mint-live" fullWidth size="lg">
@@ -132,7 +133,8 @@ export function MintDetailPage() {
                   <a
                     href={project.website}
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
+                    aria-label="Share"
                   >
                     <Button variant="secondary" size="lg">
                       <Share2 />
@@ -145,7 +147,7 @@ export function MintDetailPage() {
                 <a
                   href={project.website}
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                 >
                   <Button variant="ghost" size="sm" className="gap-2">
                     <Globe size={16} /> Website
@@ -154,7 +156,7 @@ export function MintDetailPage() {
                 <a
                   href={project.twitter}
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                 >
                   <Button variant="ghost" size="sm" className="gap-2">
                     <Twitter size={16} /> Twitter
@@ -163,7 +165,7 @@ export function MintDetailPage() {
                 <a
                   href={project.discord}
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                 >
                   <Button variant="ghost" size="sm" className="gap-2">
                     <Disc size={16} /> Discord

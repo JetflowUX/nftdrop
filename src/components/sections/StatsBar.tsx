@@ -35,6 +35,8 @@ export function StatsBar() {
           <div
             key={index}
             className="flex items-center justify-center gap-3 py-6 group hover:bg-white/5 transition-colors cursor-default animate-fade-up"
+            // Dynamic animation delay based on stat index
+            // eslint-disable-next-line react/forbid-dom-props
             style={{ animationDelay: `${index * 60}ms` }}>
 
               <div

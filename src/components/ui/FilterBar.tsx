@@ -1,4 +1,4 @@
-mkdir -p public/imagesmkdir -p public/imagespublic/images/cyber-samurai.jpgimport React from 'react';
+import React from 'react';
 import {
   Filter,
   Grid3x3,
@@ -56,7 +56,9 @@ export function FilterBar({
               Filters
             </Button>
             <div className="relative">
+              <label htmlFor="sort-select" className="sr-only">Sort by</label>
               <select
+                id="sort-select"
                 value={sortOption}
                 onChange={(event) => onSortChange(event.target.value)}
                 className="bg-surface-light/70 border border-white/10 rounded-lg py-1.5 pl-3 pr-8 text-xs text-text-secondary focus:outline-none focus:border-primary-electric"
@@ -88,12 +90,14 @@ export function FilterBar({
         <div className="flex items-center gap-2 bg-surface-light/50 p-1 rounded-lg ml-auto md:ml-0">
           <button
             onClick={() => setViewMode('grid')}
+            aria-label="Grid view"
             className={`p-2 rounded-md transition-all ${viewMode === 'grid' ? 'bg-surface text-primary-electric shadow-sm' : 'text-text-secondary hover:text-white'}`}>
 
             <Grid3x3 size={18} />
           </button>
           <button
             onClick={() => setViewMode('calendar')}
+            aria-label="Calendar view"
             className={`p-2 rounded-md transition-all ${viewMode === 'calendar' ? 'bg-surface text-primary-electric shadow-sm' : 'text-text-secondary hover:text-white'}`}>
 
             <CalendarIcon size={18} />

@@ -21,16 +21,18 @@ export function SubmitPage() {
             <form className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
-                  <label className="text-sm font-medium">Project Name</label>
+                  <label htmlFor="project-name" className="text-sm font-medium">Project Name</label>
                   <input
+                    id="project-name"
                     type="text"
                     className="w-full bg-surface-light border border-white/10 rounded-lg p-3 focus:outline-none focus:border-primary-electric"
                     placeholder="e.g. Cyber Samurai" />
 
                 </div>
                 <div className="space-y-2">
-                  <label className="text-sm font-medium">Mint Date</label>
+                  <label htmlFor="mint-date" className="text-sm font-medium">Mint Date</label>
                   <input
+                    id="mint-date"
                     type="datetime-local"
                     className="w-full bg-surface-light border border-white/10 rounded-lg p-3 focus:outline-none focus:border-primary-electric" />
 
@@ -39,16 +41,18 @@ export function SubmitPage() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
-                  <label className="text-sm font-medium">Supply</label>
+                  <label htmlFor="supply" className="text-sm font-medium">Supply</label>
                   <input
+                    id="supply"
                     type="number"
                     className="w-full bg-surface-light border border-white/10 rounded-lg p-3 focus:outline-none focus:border-primary-electric"
                     placeholder="5555" />
 
                 </div>
                 <div className="space-y-2">
-                  <label className="text-sm font-medium">Price (ADA)</label>
+                  <label htmlFor="price" className="text-sm font-medium">Price (ADA)</label>
                   <input
+                    id="price"
                     type="number"
                     className="w-full bg-surface-light border border-white/10 rounded-lg p-3 focus:outline-none focus:border-primary-electric"
                     placeholder="45" />
@@ -57,30 +61,36 @@ export function SubmitPage() {
               </div>
 
               <div className="space-y-2">
-                <label className="text-sm font-medium">Description</label>
+                <label htmlFor="description" className="text-sm font-medium">Description</label>
                 <textarea
+                  id="description"
                   className="w-full bg-surface-light border border-white/10 rounded-lg p-3 h-32 focus:outline-none focus:border-primary-electric"
                   placeholder="Tell us about your project..." />
 
               </div>
 
               <div className="space-y-2">
-                <label className="text-sm font-medium">Official Links</label>
+                <label htmlFor="website" className="text-sm font-medium">Official Links</label>
                 <div className="grid grid-cols-1 gap-4">
                   <input
+                    id="website"
                     type="url"
                     className="w-full bg-surface-light border border-white/10 rounded-lg p-3 focus:outline-none focus:border-primary-electric"
                     placeholder="Website URL" />
 
                   <input
+                    id="twitter"
                     type="url"
                     className="w-full bg-surface-light border border-white/10 rounded-lg p-3 focus:outline-none focus:border-primary-electric"
-                    placeholder="Twitter URL" />
+                    placeholder="Twitter URL"
+                    aria-label="Twitter URL" />
 
                   <input
+                    id="discord"
                     type="url"
                     className="w-full bg-surface-light border border-white/10 rounded-lg p-3 focus:outline-none focus:border-primary-electric"
-                    placeholder="Discord Invite" />
+                    placeholder="Discord Invite"
+                    aria-label="Discord Invite" />
 
                 </div>
               </div>

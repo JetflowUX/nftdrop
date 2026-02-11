@@ -49,6 +49,12 @@
   .animate-delay-500 {
     animation-delay: 500ms;
   }
+  .animate-delay-1000 {
+    animation-delay: 1000ms;
+  }
+  .animate-delay-2000 {
+    animation-delay: 2000ms;
+  }
 }
 
 /* Custom Scrollbar */

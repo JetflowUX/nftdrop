@@ -91,18 +91,12 @@ export function HeroSection() {
 
             {/* Background Decorative Cards */}
             <div
-              className="absolute top-40 right-60 w-72 z-10 opacity-60 scale-90 blur-[1px] animate-float"
-              style={{
-                animationDelay: '1s'
-              }}>
+              className="absolute top-40 right-60 w-72 z-10 opacity-60 scale-90 blur-[1px] animate-float animate-delay-1000">
 
               <GlassCard className="h-80 bg-surface-light/50" children={null} />
             </div>
             <div
-              className="absolute top-0 right-0 w-64 z-0 opacity-30 scale-75 blur-[2px] animate-float"
-              style={{
-                animationDelay: '2s'
-              }}>
+              className="absolute top-0 right-0 w-64 z-0 opacity-30 scale-75 blur-[2px] animate-float animate-delay-2000">
 
               <GlassCard className="h-64 bg-surface-light/30" children={null} />
             </div>

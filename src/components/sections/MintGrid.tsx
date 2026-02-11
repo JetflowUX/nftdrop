@@ -102,6 +102,8 @@ export function MintGrid({ title, mints }: MintGridProps) {
           <div
                 key={mint.id}
                 className="animate-fade-up"
+                // Dynamic animation delay based on card index
+                // eslint-disable-next-line react/forbid-dom-props
                 style={{ animationDelay: `${index * 40}ms` }}
               >
                 <MintCard project={mint} />

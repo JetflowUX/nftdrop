@@ -22,7 +22,8 @@ export function Footer() {
               <a
                 href="https://twitter.com"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
+                aria-label="Follow us on Twitter"
                 className="text-text-secondary hover:text-white transition-colors">
 
                 <Twitter size={20} />
@@ -30,7 +31,8 @@ export function Footer() {
               <a
                 href="https://discord.com"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
+                aria-label="Join our Discord server"
                 className="text-text-secondary hover:text-white transition-colors">
 
                 <Disc size={20} />
@@ -38,7 +40,8 @@ export function Footer() {
               <a
                 href="https://github.com"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
+                aria-label="View our GitHub repository"
                 className="text-text-secondary hover:text-white transition-colors">
 
                 <Github size={20} />
@@ -108,7 +111,7 @@ export function Footer() {
                 <a
                   href="https://discord.com"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   className="hover:text-primary-electric transition-colors">
 
                   Discord Server
@@ -118,7 +121,7 @@ export function Footer() {
                 <a
                   href="https://twitter.com"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   className="hover:text-primary-electric transition-colors">
 
                   Twitter Spaces

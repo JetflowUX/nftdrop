@@ -115,6 +115,8 @@ export function CommunityPage() {
                             <td className="px-6 py-4">
                               <div className="flex items-center gap-2">
                                 <div className="h-1.5 w-16 bg-white/10 rounded-full overflow-hidden">
+                                  {/* Dynamic width based on rating percentage */}
+                                  {/* eslint-disable-next-line react/forbid-dom-props */}
                                   <div 
                                     className="h-full bg-primary-electric rounded-full" 
                                     style={{ width: `${collection.communityRating}%` }}
@@ -225,7 +227,7 @@ export function CommunityPage() {
                   <a
                     href="https://twitter.com"
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                   >
                     <Button variant="secondary" className="flex items-center justify-center gap-2">
                       <Twitter size={18} /> Twitter
@@ -234,7 +236,7 @@ export function CommunityPage() {
                   <a
                     href="https://discord.com"
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                   >
                     <Button variant="secondary" className="flex items-center justify-center gap-2 text-indigo-400">
                       <Disc size={18} /> Discord

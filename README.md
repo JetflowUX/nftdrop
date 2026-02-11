@@ -1,0 +1,2 @@
+# nftdrop
+Cardano NFT drop

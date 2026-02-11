@@ -1,4 +1,4 @@
-import React from 'react';
+mkdir -p public/imagesmkdir -p public/imagespublic/images/cyber-samurai.jpgimport React from 'react';
 import {
   Filter,
   Grid3x3,

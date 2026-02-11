@@ -26,7 +26,7 @@ export const mockMints: MintProject[] = [
   id: '1',
   name: 'Cyber Samurai ADA',
   coverImage:
-  'https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=800&q=80',
+  '/images/cyber-samurai.jpg',
   mintDate: new Date(Date.now() + 1000 * 60 * 60 * 2).toISOString(), // 2 hours from now
   mintPrice: 45,
   supply: 5555,

@@ -34,7 +34,7 @@ export function HeroSection() {
             </p>
 
             <div className="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start animate-fade-up animate-delay-300">
-              <Link to="/">
+              <Link to="/calendar">
                 <Button size="lg" className="group">
                   Explore Upcoming
                   <ArrowRight
@@ -59,7 +59,7 @@ export function HeroSection() {
           <div className="relative hidden lg:block h-[600px]">
             {/* Main Floating Card */}
             <div className="absolute top-10 right-10 w-80 z-20 animate-float">
-              <GlassCard className="!p-0 overflow-hidden shadow-glow-lg border-primary/30">
+              <GlassCard className="!p-0 overflow-hidden shadow-2xl shadow-primary-electric/20 border-primary/30">
                 <div className="h-48 relative">
                   <img
                     src={featuredMint.coverImage}

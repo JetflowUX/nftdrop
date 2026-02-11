@@ -28,13 +28,14 @@ export function StatsBar() {
   }];
 
   return (
-    <div className="border-y border-white/5 bg-surface/50 backdrop-blur-sm">
+    <div className="border-y border-white/5 bg-surface/50 backdrop-blur-sm animate-fade-in-soft">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-white/5">
           {stats.map((stat, index) =>
           <div
             key={index}
-            className="flex items-center justify-center gap-3 py-6 group hover:bg-white/5 transition-colors cursor-default">
+            className="flex items-center justify-center gap-3 py-6 group hover:bg-white/5 transition-colors cursor-default animate-fade-up"
+            style={{ animationDelay: `${index * 60}ms` }}>
 
               <div
               className={`p-2 rounded-lg bg-white/5 ${stat.color} group-hover:scale-110 transition-transform`}>

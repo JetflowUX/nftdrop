@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { mockMints } from '../data/mockMints';
 import { Header } from '../components/layout/Header';
 import { Footer } from '../components/layout/Footer';
@@ -22,7 +22,7 @@ export function MintDetailPage() {
       <main className="pt-32 pb-16 px-4 md:px-6">
         <div className="max-w-7xl mx-auto">
           {/* Top Section: Two Columns */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-16">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-16 animate-fade-up">
             {/* Left: Image & Gallery */}
             <div className="lg:col-span-5 space-y-6">
               <div className="aspect-square rounded-2xl overflow-hidden border border-white/10 shadow-glow-lg relative group">
@@ -33,9 +33,15 @@ export function MintDetailPage() {
 
                 <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
                   <div className="flex gap-2">
-                    <Button size="sm" variant="secondary">
-                      <Share2 size={16} />
-                    </Button>
+                    <a
+                      href={project.website}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <Button size="sm" variant="secondary">
+                        <Share2 size={16} />
+                      </Button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -103,33 +109,66 @@ export function MintDetailPage() {
                   max={project.supply}
                   label="Mint Progress" />
 
-                  <Button variant="mint-live" fullWidth size="lg">
-                    MINT NOW
-                  </Button>
+                  <a
+                    href={project.website}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="block"
+                  >
+                    <Button variant="mint-live" fullWidth size="lg">
+                      MINT NOW
+                    </Button>
+                  </a>
                 </div>
               }
 
               {!project.isLive &&
               <div className="flex gap-4">
-                  <Button variant="primary" fullWidth size="lg">
-                    Remind Me
-                  </Button>
-                  <Button variant="secondary" size="lg">
-                    <Share2 />
-                  </Button>
+                  <Link to="/watchlist" className="flex-1">
+                    <Button variant="primary" fullWidth size="lg">
+                      Remind Me
+                    </Button>
+                  </Link>
+                  <a
+                    href={project.website}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <Button variant="secondary" size="lg">
+                      <Share2 />
+                    </Button>
+                  </a>
                 </div>
               }
 
               <div className="flex flex-wrap gap-4 pt-4 border-t border-white/10">
-                <Button variant="ghost" size="sm" className="gap-2">
-                  <Globe size={16} /> Website
-                </Button>
-                <Button variant="ghost" size="sm" className="gap-2">
-                  <Twitter size={16} /> Twitter
-                </Button>
-                <Button variant="ghost" size="sm" className="gap-2">
-                  <Disc size={16} /> Discord
-                </Button>
+                <a
+                  href={project.website}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Button variant="ghost" size="sm" className="gap-2">
+                    <Globe size={16} /> Website
+                  </Button>
+                </a>
+                <a
+                  href={project.twitter}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Button variant="ghost" size="sm" className="gap-2">
+                    <Twitter size={16} /> Twitter
+                  </Button>
+                </a>
+                <a
+                  href={project.discord}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Button variant="ghost" size="sm" className="gap-2">
+                    <Disc size={16} /> Discord
+                  </Button>
+                </a>
                 <div className="ml-auto flex items-center gap-2 bg-surface-light px-3 py-1.5 rounded-lg border border-white/5">
                   <span className="text-xs text-text-secondary font-mono">
                     Policy: {project.policyId}
@@ -144,7 +183,7 @@ export function MintDetailPage() {
           </div>
 
           {/* Bottom Section: Details & Risk */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 animate-fade-up animate-delay-200">
             <div className="lg:col-span-2 space-y-8">
               <section>
                 <h3 className="text-2xl font-bold mb-6">About Project</h3>
@@ -194,14 +233,16 @@ export function MintDetailPage() {
                   Verify policy IDs and smart contracts before connecting your
                   wallet.
                 </p>
-                <Button
-                  variant="secondary"
-                  size="sm"
-                  fullWidth
-                  className="text-xs">
+                <Link to="/community">
+                  <Button
+                    variant="secondary"
+                    size="sm"
+                    fullWidth
+                    className="text-xs">
 
-                  Read Safety Guide
-                </Button>
+                    Read Safety Guide
+                  </Button>
+                </Link>
               </GlassCard>
             </div>
           </div>

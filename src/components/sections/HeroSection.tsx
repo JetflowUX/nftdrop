@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight, Sparkles } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { Button } from '../ui/Button';
 import { SearchInput } from '../ui/SearchInput';
 import { GlassCard } from '../ui/GlassCard';
@@ -16,36 +17,40 @@ export function HeroSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-8 text-center lg:text-left">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary-electric text-sm font-medium animate-fade-in">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary-electric text-sm font-medium animate-fade-up">
               <Sparkles size={14} />
               <span>The #1 Cardano NFT Calendar</span>
             </div>
 
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight animate-fade-up animate-delay-100">
               Track Every <br />
               <span className="text-gradient-primary">Cardano Mint</span> <br />
               Before It Drops.
             </h1>
 
-            <p className="text-lg text-text-secondary max-w-xl mx-auto lg:mx-0">
+            <p className="text-lg text-text-secondary max-w-xl mx-auto lg:mx-0 animate-fade-up animate-delay-200">
               The most trusted community-powered calendar for verified ADA
               drops. Never miss a mint again with real-time tracking and alerts.
             </p>
 
-            <div className="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
-              <Button size="lg" className="group">
-                Explore Upcoming
-                <ArrowRight
-                  size={18}
-                  className="ml-2 group-hover:translate-x-1 transition-transform" />
+            <div className="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start animate-fade-up animate-delay-300">
+              <Link to="/">
+                <Button size="lg" className="group">
+                  Explore Upcoming
+                  <ArrowRight
+                    size={18}
+                    className="ml-2 group-hover:translate-x-1 transition-transform" />
 
-              </Button>
-              <Button variant="secondary" size="lg">
-                Submit Project
-              </Button>
+                </Button>
+              </Link>
+              <Link to="/submit">
+                <Button variant="secondary" size="lg">
+                  Submit Project
+                </Button>
+              </Link>
             </div>
 
-            <div className="pt-8 max-w-md mx-auto lg:mx-0">
+            <div className="pt-8 max-w-md mx-auto lg:mx-0 animate-fade-up animate-delay-500">
               <SearchInput placeholder="Search by name, policy ID, or tag..." />
             </div>
           </div>
@@ -75,9 +80,11 @@ export function HeroSection() {
                       size="sm" />
 
                   </div>
-                  <Button fullWidth size="sm">
-                    View Details
-                  </Button>
+                  <Link to={`/mint/${featuredMint.id}`}>
+                    <Button fullWidth size="sm">
+                      View Details
+                    </Button>
+                  </Link>
                 </div>
               </GlassCard>
             </div>

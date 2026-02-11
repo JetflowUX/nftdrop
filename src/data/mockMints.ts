@@ -26,7 +26,7 @@ export const mockMints: MintProject[] = [
   id: '1',
   name: 'Cyber Samurai ADA',
   coverImage:
-  'https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?w=800&q=80',
+  'https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=800&q=80',
   mintDate: new Date(Date.now() + 1000 * 60 * 60 * 2).toISOString(), // 2 hours from now
   mintPrice: 45,
   supply: 5555,
@@ -50,7 +50,7 @@ export const mockMints: MintProject[] = [
   id: '2',
   name: 'Nebula Explorers',
   coverImage:
-  'https://images.unsplash.com/photo-1634973357973-f2ed2657db3c?w=800&q=80',
+  'https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=800&q=80',
   mintDate: new Date(Date.now() - 1000 * 60 * 30).toISOString(), // Started 30 mins ago
   mintPrice: 120,
   supply: 1000,
@@ -74,7 +74,7 @@ export const mockMints: MintProject[] = [
   id: '3',
   name: 'Cardano City',
   coverImage:
-  'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&q=80',
+  'https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=800&q=80',
   mintDate: new Date(Date.now() + 1000 * 60 * 60 * 24 * 2).toISOString(), // 2 days
   mintPrice: 80,
   supply: 10000,
@@ -98,7 +98,7 @@ export const mockMints: MintProject[] = [
   id: '4',
   name: 'Pixel Punks ADA',
   coverImage:
-  'https://images.unsplash.com/photo-1637858868799-7f26a0640eb6?w=800&q=80',
+  'https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=800&q=80',
   mintDate: new Date(Date.now() + 1000 * 60 * 60 * 5).toISOString(),
   mintPrice: 25,
   supply: 3333,
@@ -121,7 +121,7 @@ export const mockMints: MintProject[] = [
   id: '5',
   name: 'Utility Key Access',
   coverImage:
-  'https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&q=80',
+  'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80',
   mintDate: new Date(Date.now() - 1000 * 60 * 60 * 24).toISOString(), // Yesterday
   mintPrice: 500,
   supply: 100,
@@ -144,7 +144,7 @@ export const mockMints: MintProject[] = [
   id: '6',
   name: 'SoundWave Genesis',
   coverImage:
-  'https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?w=800&q=80',
+  'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=800&q=80',
   mintDate: new Date(Date.now() + 1000 * 60 * 60 * 24 * 5).toISOString(),
   mintPrice: 60,
   supply: 2000,
@@ -167,7 +167,7 @@ export const mockMints: MintProject[] = [
   id: '7',
   name: 'Abstract Minds',
   coverImage:
-  'https://images.unsplash.com/photo-1549490349-8643362247b5?w=800&q=80',
+  'https://images.unsplash.com/photo-1496317899792-9d7dbcd928a1?auto=format&fit=crop&w=800&q=80',
   mintDate: new Date(Date.now() + 1000 * 60 * 60 * 12).toISOString(),
   mintPrice: 150,
   supply: 500,
@@ -190,7 +190,7 @@ export const mockMints: MintProject[] = [
   id: '8',
   name: 'Loot Bags ADA',
   coverImage:
-  'https://images.unsplash.com/photo-1612151855475-877969f4a6cc?w=800&q=80',
+  'https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=800&q=80',
   mintDate: new Date(Date.now() + 1000 * 60 * 60 * 24 * 10).toISOString(),
   mintPrice: 0,
   supply: 8000,
@@ -213,7 +213,7 @@ export const mockMints: MintProject[] = [
   id: '9',
   name: 'Golden Ticket',
   coverImage:
-  'https://images.unsplash.com/photo-1639322537228-f710d846310a?w=800&q=80',
+  'https://images.unsplash.com/photo-1493673272479-a20888bcee10?auto=format&fit=crop&w=800&q=80',
   mintDate: new Date(Date.now() - 1000 * 60 * 15).toISOString(), // Live now
   mintPrice: 999,
   supply: 100,
@@ -236,7 +236,7 @@ export const mockMints: MintProject[] = [
   id: '10',
   name: 'Mecha Verse',
   coverImage:
-  'https://images.unsplash.com/photo-1614726365723-49cfae96c692?w=800&q=80',
+  'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80',
   mintDate: new Date(Date.now() + 1000 * 60 * 60 * 24 * 3).toISOString(),
   mintPrice: 75,
   supply: 4444,
@@ -259,7 +259,7 @@ export const mockMints: MintProject[] = [
   id: '11',
   name: 'Glitch Flowers',
   coverImage:
-  'https://images.unsplash.com/photo-1605106702734-205df224ecce?w=800&q=80',
+  'https://images.unsplash.com/photo-1465101162946-4377e57745c3?auto=format&fit=crop&w=800&q=80',
   mintDate: new Date(Date.now() + 1000 * 60 * 60 * 24 * 7).toISOString(),
   mintPrice: 35,
   supply: 1111,
@@ -282,7 +282,7 @@ export const mockMints: MintProject[] = [
   id: '12',
   name: 'Cardano Nodes',
   coverImage:
-  'https://images.unsplash.com/photo-1639762681057-408e52192e55?w=800&q=80',
+  'https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=800&q=80',
   mintDate: new Date(Date.now() + 1000 * 60 * 60 * 48).toISOString(),
   mintPrice: 200,
   supply: 500,

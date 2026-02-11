@@ -48,7 +48,7 @@ export function CommunityPage() {
       <main className="pt-32 pb-16 px-4 md:px-6">
         <div className="max-w-7xl mx-auto">
           {/* Hero Section */}
-          <div className="text-center mb-16">
+          <div className="text-center mb-16 animate-fade-up">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               MintRadar <span className="text-primary-electric">Community</span>
             </h1>
@@ -58,7 +58,7 @@ export function CommunityPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-16">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-16 animate-fade-up animate-delay-200">
             {/* Left Column: Rankings */}
             <div className="lg:col-span-8 space-y-8">
               <section>
@@ -67,9 +67,11 @@ export function CommunityPage() {
                     <TrendingUp className="text-secondary-cyan" />
                     <h2 className="text-2xl font-bold">Trending Rankings</h2>
                   </div>
-                  <Button variant="ghost" size="sm" className="hidden sm:flex items-center gap-2">
-                    View All <BarChart3 size={16} />
-                  </Button>
+                  <Link to="/community">
+                    <Button variant="ghost" size="sm" className="hidden sm:flex items-center gap-2">
+                      View All <BarChart3 size={16} />
+                    </Button>
+                  </Link>
                 </div>
 
                 <GlassCard className="!p-0 overflow-hidden">
@@ -182,9 +184,11 @@ export function CommunityPage() {
                       <div className="text-sm font-bold font-mono">2,{500 - (i * 100)} XP</div>
                     </div>
                   ))}
-                  <Button variant="secondary" size="sm" fullWidth className="mt-4">
-                    View Full Rankings
-                  </Button>
+                  <Link to="/community">
+                    <Button variant="secondary" size="sm" fullWidth className="mt-4">
+                      View Full Rankings
+                    </Button>
+                  </Link>
                 </GlassCard>
               </section>
 
@@ -218,12 +222,24 @@ export function CommunityPage() {
                   <p className="text-sm text-text-secondary italic">Stay ahead of the curve with real-time alerts.</p>
                 </div>
                 <div className="grid grid-cols-2 gap-3">
-                  <Button variant="secondary" className="flex items-center justify-center gap-2">
-                    <Twitter size={18} /> Twitter
-                  </Button>
-                  <Button variant="secondary" className="flex items-center justify-center gap-2 text-indigo-400">
-                    <Disc size={18} /> Discord
-                  </Button>
+                  <a
+                    href="https://twitter.com"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <Button variant="secondary" className="flex items-center justify-center gap-2">
+                      <Twitter size={18} /> Twitter
+                    </Button>
+                  </a>
+                  <a
+                    href="https://discord.com"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <Button variant="secondary" className="flex items-center justify-center gap-2 text-indigo-400">
+                      <Disc size={18} /> Discord
+                    </Button>
+                  </a>
                 </div>
               </GlassCard>
             </div>

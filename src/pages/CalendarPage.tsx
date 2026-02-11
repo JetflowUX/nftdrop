@@ -83,7 +83,7 @@ export function CalendarPage() {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 mb-10">
-            <GlassCard className="lg:col-span-4 space-y-5">
+            <GlassCard className="lg:col-span-4 space-y-5 animate-fade-up">
               <div className="flex items-center justify-between">
                 <div>
                   <p className="text-xs uppercase tracking-wider text-text-secondary">
@@ -133,7 +133,7 @@ export function CalendarPage() {
               )}
             </GlassCard>
 
-            <GlassCard className="lg:col-span-8 space-y-4">
+            <GlassCard className="lg:col-span-8 space-y-4 animate-fade-up animate-delay-200">
               <div>
                 <p className="text-xs uppercase tracking-wider text-text-secondary">
                   Calendar Notes
@@ -270,7 +270,9 @@ export function CalendarPage() {
                             <Link to={`/mint/${project.id}`}>
                               <Button variant="primary">View Details</Button>
                             </Link>
-                            <Button variant="secondary">Remind Me</Button>
+                            <Link to="/watchlist">
+                              <Button variant="secondary">Remind Me</Button>
+                            </Link>
                           </div>
                         </div>
                       </div>

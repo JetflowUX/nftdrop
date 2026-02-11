@@ -10,14 +10,14 @@ export function SubmitPage() {
       <Header />
       <main className="pt-32 pb-16 px-4 md:px-6">
         <div className="max-w-3xl mx-auto">
-          <div className="text-center mb-12">
+          <div className="text-center mb-12 animate-fade-up">
             <h1 className="text-4xl font-bold mb-4">Submit Your Project</h1>
             <p className="text-text-secondary">
               Get your Cardano NFT drop listed on MintRadar ADA.
             </p>
           </div>
 
-          <GlassCard className="p-8">
+          <GlassCard className="p-8 animate-fade-up animate-delay-200">
             <form className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
@@ -86,7 +86,7 @@ export function SubmitPage() {
               </div>
 
               <div className="pt-4">
-                <Button fullWidth size="lg">
+                <Button fullWidth size="lg" type="submit">
                   Submit for Review
                 </Button>
                 <p className="text-xs text-center text-text-secondary mt-4">

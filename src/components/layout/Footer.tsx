@@ -20,19 +20,25 @@ export function Footer() {
             </p>
             <div className="flex gap-4">
               <a
-                href="#"
+                href="https://twitter.com"
+                target="_blank"
+                rel="noreferrer"
                 className="text-text-secondary hover:text-white transition-colors">
 
                 <Twitter size={20} />
               </a>
               <a
-                href="#"
+                href="https://discord.com"
+                target="_blank"
+                rel="noreferrer"
                 className="text-text-secondary hover:text-white transition-colors">
 
                 <Disc size={20} />
               </a>
               <a
-                href="#"
+                href="https://github.com"
+                target="_blank"
+                rel="noreferrer"
                 className="text-text-secondary hover:text-white transition-colors">
 
                 <Github size={20} />
@@ -100,7 +106,9 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="https://discord.com"
+                  target="_blank"
+                  rel="noreferrer"
                   className="hover:text-primary-electric transition-colors">
 
                   Discord Server
@@ -108,7 +116,9 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noreferrer"
                   className="hover:text-primary-electric transition-colors">
 
                   Twitter Spaces
